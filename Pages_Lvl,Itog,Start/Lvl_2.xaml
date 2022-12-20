@@ -1,0 +1,43 @@
+﻿<Page x:Class="HelpGraphABC.Pages_Lvl_Itog_Start.Lvl_2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpGraphABC.Pages_Lvl_Itog_Start"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="922"
+      Title="Lvl_2">
+
+    <Grid Background="#FFDCEFFF">
+        <TextBlock x:Name="tblNameLvl" Margin="367,15,0,0" FontFamily="Curlz MT" FontSize="36" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Width="238" Height="52" VerticalAlignment="Top" Text="Уровень 2"/>
+        <TextBlock x:Name="tblCode" Margin="36,67,0,0" Style="{StaticResource TextCode}" Height="366" Width="357" TextWrapping="Wrap" >
+            <Run Text="Program Nom_2; "/><LineBreak/>
+            <Run Text="uses Graphabc; "/><LineBreak/>
+            <Run Text="var"/><LineBreak/>
+            <Run Text="a:string;"/><LineBreak/>
+            <Run Text="b:picture;"/><LineBreak/>
+            <Run Text="begin "/><LineBreak/>
+            <Run Text="SetWindowWidth(600); "/>
+            <LineBreak/><Run Text="SetWindowHeight(400); "/><LineBreak/>
+            <Run Text="SetBrushColor(clBrown);"/><LineBreak/>
+            <Run Text="Rectangle(100,160,150,340);"/><LineBreak/>
+            <Run Text="SetBrushColor(clGreen);"/><LineBreak/>
+            <Run Text="Circle(125,160,80);"/><LineBreak/>
+            <Run Text="setBrushColor(clRed);"/><LineBreak/>
+            <Run Text="Circle("/><Run Text="        "/><Run Text="    ,           , 20); //"/><Run Style="{StaticResource TextCodeCom}" Text=" Измени х и у мячика! Обрати внимание на радиус"/><LineBreak/>
+            <Run Text="a:='Shurupchic.png';"/><LineBreak/>
+            <Run Text="b:=Picture.Create(a);"/><LineBreak/>
+            <Run Text="b.Load(a);"/><LineBreak/>
+            <Run Text="b.Draw(400,190);"/><LineBreak/>
+            <Run Text="end."/>
+        </TextBlock>
+        <TextBlock x:Name="tblTask" Margin="217,451,0,0" Height="71" Width="336" TextAlignment="Center" Style="{StaticResource TextTask}" Text="Надеюсь прошлое задание было не сложным. На этот раз мяч застрял на дереве, достань его!" TextWrapping="Wrap"/>
+        <Button x:Name="btnClear" Content="Сброс уровня" HorizontalAlignment="Left" Margin="667,464,0,0" VerticalAlignment="Top" Width="183" Height="58" Click="BtnClear_Click"/>
+        <Button x:Name="btnProv" Content="Проверить" HorizontalAlignment="Left" Margin="226,365,0,0" VerticalAlignment="Top" Height="50" Width="145" Click="BtnProv_Click"/>
+        <Image x:Name="imShurup" HorizontalAlignment="Left" Height="211" Margin="36,376,0,-18" VerticalAlignment="Top" Width="271" Source="\source\Shurupchic.png"/>
+        <Image x:Name="imLvl" HorizontalAlignment="Left" Height="370" Margin="401,67,0,0" VerticalAlignment="Top" Width="500" Source="\source\Lvl2_start.jpg" />
+        <Image x:Name="imRedBall"  HorizontalAlignment="Left" Height="46" Margin="491, 189, 0, 0" VerticalAlignment="Top" Width="50" Source="\source\Red_ball.png"/>
+        <TextBox x:Name="tbX" HorizontalAlignment="Left" Margin="78,303,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="36" Height="20"/>
+        <TextBox x:Name="tbY" HorizontalAlignment="Left" Margin="124,303,0,0" TextWrapping="Wrap" Text="150" VerticalAlignment="Top" Width="36" Height="20"/>
+    </Grid>
+</Page>

@@ -1,0 +1,18 @@
+﻿<Page x:Class="HelpGraphABC.Pages_Lvl_Itog_Start.Itog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpGraphABC.Pages_Lvl_Itog_Start"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="922"
+      Title="Itog">
+
+    <Grid>
+        <Grid Background="#FFDCEFFF">
+            <TextBlock x:Name="tbFinish"  HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="153" Width="818" FontWeight="Bold" FontSize="18" TextAlignment="Center"><Run Text="&#x9;Поздравляю! Ты прошел все уровни!"/><LineBreak/><Run Text=" &#x9;Шурупчик за это время очень утомился поэтому лег спать, а ты молодец что смог разобраться с графическим интерфейсом!"/><LineBreak/><Run Text="&#x9;Но ты думаешь что это все, я прав? Не совсем так. В графическом модуле существует еще несколько команд которые тут не используются"/><Run Text=", и если захочешь углубиться в изучение этого модуля можешь их найти!"/><LineBreak/><Run/></TextBlock>
+            <TextBlock x:Name="tbGoodbye" HorizontalAlignment="Left" Margin="159,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="588" FontWeight="Bold" FontSize="20" Foreground="#FFB53A3A" TextAlignment="Center"><Run Language="ru-ru" Text="Ну а мы с Шурупчиком с тобой прощаемся, надеюсь этот котик тебе помог, до новых встреч, мяу!"/></TextBlock>
+            <Image x:Name="imShurupSleep" HorizontalAlignment="Left" Height="344" Margin="289,123,0,0" VerticalAlignment="Top" Width="427" Source="\Source\Shurup_sleep.png"/>
+        </Grid>
+    </Grid>
+</Page>

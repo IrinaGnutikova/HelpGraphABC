@@ -1,0 +1,38 @@
+﻿<Page x:Class="HelpGraphABC.Pages_Lvl_Itog_Start.Lvl_3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpGraphABC.Pages_Lvl_Itog_Start"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="922"
+      Title="Lvl_3">
+
+    <Grid Background="#FFDCEFFF">
+        <TextBlock x:Name="tblNameLvl" Margin="367,15,0,0" TextWrapping="Wrap" FontFamily="Curlz MT" FontSize="36" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Width="238" Height="52" VerticalAlignment="Top" Text="Уровень 3"/>
+        <TextBlock x:Name="tblCode" Margin="36,67,0,0" TextWrapping="Wrap" Height="366" Width="444"  Style="{StaticResource TextCode}">
+            <Run Text="Program Nom_3;"/><LineBreak/>
+            <Run Text="uses Graphabc;"/><LineBreak/>
+            <Run Text="var"/><LineBreak/>
+            <Run Text="a:string;"/><LineBreak/>
+            <Run Text="b:picture;"/><LineBreak/>
+            <Run Text="begin"/><LineBreak/>
+            <Run Text="SetWindowWidth(300);"/><LineBreak/>
+            <Run Text="SetWindowHeight(250);"/><LineBreak/>
+            <Run Text="setBrushColor(             ); "/><Run Style="{StaticResource TextCodeCom}" Text="//измени цвет на синий. В PascalABC каждый цвет начинается на cl. Например, clGreen (заленый), cl White(белый)"/><LineBreak/>
+            <Run Text="Circle(100,170, 20);"/><LineBreak/>
+            <Run Text="a:='Shurupchic.png';"/><LineBreak/>
+            <Run Text="b:=Picture.Create(a);"/><LineBreak/>
+            <Run Text="b.Load(a);"/><LineBreak/>
+            <Run Text="b.Draw(150,60);"/><LineBreak/>
+            <Run Text="end."/>
+        </TextBlock>
+        <TextBlock x:Name="tblTask" TextAlignment="Center" Style="{StaticResource TextTask}" Margin="246,458,0,0" Height="70" Width="336" Text="Шурупчику надоел красный мячик. Перекрась его в синий." TextWrapping="Wrap"/>
+        <Rectangle x:Name="recBackground" HorizontalAlignment="Left" Height="371" Margin="485,67,0,0" VerticalAlignment="Top" Width="371" Fill="White"/>
+        <Image x:Name="imShurup" HorizontalAlignment="Left" Height="256" Margin="21,313,0,0" VerticalAlignment="Top" Width="268" Source="\source\Shurupchic.png"/>
+        <Image x:Name="imBall" HorizontalAlignment="Left" Height="371" Margin="485,67,0,0" VerticalAlignment="Top" Width="405" Source="\Source\Red_ball.png"/>
+        <Button x:Name="btnClear" Content="Сброс уровня" HorizontalAlignment="Left" Margin="667,464,0,0" VerticalAlignment="Top" Width="183" Height="58" Click="BtnClear_Click"/>
+        <Button x:Name="btnProv" Content="Проверить" HorizontalAlignment="Left" Margin="266,368,0,0" VerticalAlignment="Top" Height="50" Width="145" Click="BtnProv_Click"/>
+        <TextBox x:Name="tbColor" HorizontalAlignment="Left" Margin="124,213,0,0" TextWrapping="Wrap" Text="clRed" VerticalAlignment="Top" Width="45"/>
+    </Grid>
+</Page>

@@ -1,0 +1,38 @@
+﻿<Page x:Class="HelpGraphABC.Pages_Lvl_Itog_Start.Lvl_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpGraphABC.Pages_Lvl_Itog_Start"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="922"
+      Title="Lvl_1">
+
+    <Grid Background="#FFDCEFFF">
+        <TextBlock x:Name="tblNameLvl" Margin="367,15,0,0" FontFamily="Curlz MT" FontSize="36" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Width="238" Height="52" VerticalAlignment="Top" Text="Уровень 1"/>
+        <TextBlock x:Name="tblCode" Margin="36,67,0,0" Style="{StaticResource TextCode}" Height="366" Width="403" TextWrapping="Wrap">
+            <Run Text="Program Nom_1;"/><LineBreak/>
+            <Run Text="uses Graphabc;"/><Run Style="{StaticResource TextCodeCom}" Text="//подключение модуля GraphABC"/><LineBreak/>
+            <Run Text="var"/><LineBreak/>
+            <Run Text="a:string;"/><LineBreak/>
+            <Run Text="b:picture;"/><LineBreak/>
+            <Run Text="begin"/><LineBreak/>
+            <Run Text="SetWindowWidth(463); "/><Run Style="{StaticResource TextCodeCom}" Text="//ширина окна программы"/><LineBreak/>
+            <Run Text="SetWindowHeight(371); "/><Run Style="{StaticResource TextCodeCom}" Text="//высота окна программы"/><LineBreak/>
+            <Run Text="a:='Shurupchic.png';"/><LineBreak/>
+            <Run Text="b:=Picture.Create(a);"/><LineBreak/>
+            <Run Text="b.Load(a);"/><LineBreak/>
+            <Run Text="b.Draw(400,190);"/><LineBreak/>
+            <Run Text="setBrushColor(clRed);"/><LineBreak/>
+            <Run Text="Circle(             ,300, 20); "/><Run Style="{StaticResource TextCodeCom}"  Text="//создание круга. Первое значение означает х, второе значение у, третье значение радиус "/><LineBreak/>
+            <Run Text="end."/>
+        </TextBlock>
+        <TextBox x:Name="tbX" Text="50" Margin="78,304,0,0" Background="#FFFFF8F8" BorderBrush="{x:Null}" Width="42" Height="20" Style="{StaticResource TextCode}"/>
+        <TextBlock x:Name="tblTask" Margin="218,451,0,0" Height="71" Width="336" TextAlignment="Center"  Style="{StaticResource TextTask}" TextWrapping="Wrap" Text="Помоги Шурупчику достать мяч! Измени его координату по оси х."/>
+        <Button x:Name="btnClear" Content="Сброс уровня" HorizontalAlignment="Left" Margin="667,464,0,0" VerticalAlignment="Top" Width="183" Height="58" Click="BtnClear_Click"/>
+        <Button x:Name="btnProv" Content="Проверить" HorizontalAlignment="Left" Margin="266,368,0,0" VerticalAlignment="Top" Height="50" Width="145" Click="BtnProv_Click"/>
+        <Image x:Name="imLvl" HorizontalAlignment="Left" Height="366" Margin="444,67,0,0" VerticalAlignment="Top" Width="446" Source="\source\Lvl1_start.jpg"/>
+        <Image x:Name="imShurup" HorizontalAlignment="Left" Height="245" Margin="21,324,0,0" VerticalAlignment="Top" Width="307" Source="\source\Shurupchic.png"/>
+        <Image x:Name="imRedBall"  HorizontalAlignment="Left" Height="46" Margin="494,326,0,0" VerticalAlignment="Top" Width="50" Source="\source\Red_ball.png"/>
+    </Grid>
+</Page>

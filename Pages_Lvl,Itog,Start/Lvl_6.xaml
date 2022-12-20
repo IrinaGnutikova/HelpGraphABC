@@ -1,0 +1,67 @@
+﻿<Page x:Class="HelpGraphABC.Pages_Lvl_Itog_Start.Lvl_6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HelpGraphABC.Pages_Lvl_Itog_Start"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="922"
+      Title="Lvl_6">
+
+    <Grid Background="#FFDCEFFF">
+        <TextBlock x:Name="tblNameLvl" Margin="367,15,0,0" TextWrapping="Wrap" FontFamily="Curlz MT" FontSize="36" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Width="238" Height="52" VerticalAlignment="Top" Text="Уровень 6"/>
+        <TextBlock x:Name="tblCode" Margin="36,67,0,0" TextWrapping="Wrap" Height="455" Width="282" Style ="{StaticResource TextCode}">
+            <Run Text="Program Nom_6; "/><LineBreak/>
+            <Run Text="uses Graphabc; "/><LineBreak/>
+            <Run Text="begin "/><LineBreak/>
+            <Run Text="SetWindowWidth(500); "/><LineBreak/>
+            <Run Text="SetWindowHeight(500);"/><LineBreak/>
+            <Run Text="Line(265,210,290,135); "/><Run Style ="{StaticResource TextCodeCom}" Text="//уши"/><LineBreak/>
+            <Run Text="Line(265,210,315,210);"/><LineBreak/>
+            <Run Text="Line(290,135,315,210);"/><LineBreak/>
+            <Run Text="                           (277,200,clLightSkyBlue);"/><LineBreak/>
+            <Run Text="Line(       ,210,210,135);"/><LineBreak/>
+            <Run Text="Line(235,210,        ,210);"/><LineBreak/>
+            <Run Text="Line(210,135,185,210);"/><LineBreak/>
+            <Run Text="FloodFill(197,200,clLightSkyBlue);"/><LineBreak/>
+            <Run Text="                                 (                                    );"/><LineBreak/>
+            <Run Text="Ellipse(210,270,        ,330); "/><Run Style ="{StaticResource TextCodeCom}" Text="//хвост"/><LineBreak/>
+            <Run Text="Circle(250,         ,         ); "/><Run Style ="{StaticResource TextCodeCom}" Text="//тело (Подсказка: Центр находится в середине холста)"/><LineBreak/>
+            <Run Text="SetBrushColor(clSteelBlue);"/><LineBreak/>
+            <Run Text="Circle(220,230,15); "/><Run Style ="{StaticResource TextCodeCom}" Text="//глаза"/><LineBreak/>
+            <Run Text="Circle(280,230,        );"/><LineBreak/>
+            <Run Text="Line(240,250,260,250);//"/><Run Style ="{StaticResource TextCodeCom}" Text="нос и рот"/><LineBreak/>
+            <Run Text="Line(260,260,240,250);"/><LineBreak/>
+            <Run Text="Line(240,260,260,250);"/><LineBreak/>
+            <Run Text="end."/>
+        </TextBlock>
+        <Button x:Name="btnClear" Content="Сброс уровня" HorizontalAlignment="Left" Margin="685,483,0,0" VerticalAlignment="Top" Width="183" Height="58" Click="BtnClear_Click"/>
+        <TextBlock x:Name="tblTask" Margin="318,474,0,0" Height="71" Width="336" TextAlignment="Center" TextWrapping="Wrap" Style="{StaticResource TextTask}"><Run Text="Котик хотел нарисовать себя, но запутался :( "/><LineBreak/><Run Text="Помоги закончить рисунок"/></TextBlock>
+        <Image x:Name="imLvl" HorizontalAlignment="Left" Height="397" Margin="461,67,0,0" VerticalAlignment="Top" Width="410" Source="\Source\Lvl6_start.png"/>
+        <Image x:Name="imShurup" HorizontalAlignment="Left" Height="200" Margin="293,294,0,0" VerticalAlignment="Top" Width="211" Source="\source\Shurupchic6.png"/>
+        <ComboBox x:Name="cbFfill" HorizontalAlignment="Left" Margin="36,210,0,0" VerticalAlignment="Top" Width="96">
+            <ComboBoxItem Content="FloodFill"/>
+            <ComboBoxItem Content="SetBrushColor"/>
+            <ComboBoxItem Content="FillingFill"/>
+            <ComboBoxItem Content="ColorBrush"/>
+        </ComboBox>
+        <ComboBox x:Name="cbSetbr" HorizontalAlignment="Left" Margin="36,301,0,0" VerticalAlignment="Top" Width="118" Height="21">
+            <ComboBoxItem Content="FloodFillColor"/>
+            <ComboBoxItem Content="SetFloodColor"/>
+            <ComboBoxItem Content="SetBrushColor"/>
+        </ComboBox>
+        <ComboBox x:Name="cbColor" HorizontalAlignment="Left" Margin="159,301,0,0" VerticalAlignment="Top" Width="129" Height="21">
+            <ComboBoxItem Content="clLightSkyBlue"/>
+            <ComboBoxItem Content="LightSkyBlue"/>
+            <ComboBoxItem Content="cl Light Sky Blue"/>
+        </ComboBox>
+        <TextBox x:Name="tbCirREye" HorizontalAlignment="Left" Margin="132,414,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="27"/>
+        <TextBox x:Name="tbCirY" HorizontalAlignment="Left" Margin="104,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30"/>
+        <TextBox x:Name="tbCirR" HorizontalAlignment="Left" Margin="139,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30"/>
+        <TextBox x:Name="tbElX" HorizontalAlignment="Left" Margin="134,322,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="25"/>
+        <TextBox x:Name="tbLineX2" HorizontalAlignment="Left" Margin="118,248,0,0" TextWrapping="Wrap" Text="185" VerticalAlignment="Top" Width="28"/>
+        <TextBox x:Name="tbLineX1" HorizontalAlignment="Left" Margin="64,232,0,0" TextWrapping="Wrap" Text="210" VerticalAlignment="Top" Width="29"/>
+        <Button x:Name="btnHelp" Content="Справка" HorizontalAlignment="Left" Margin="28,510,0,0" VerticalAlignment="Top" Height="45" Width="141" Click="BtnHelp_Click"/>
+        <Button x:Name="btnProv" Content="Проверить" HorizontalAlignment="Left" Margin="188,510,0,0" VerticalAlignment="Top" Height="45" Width="140" Click="BtnProv_Click"/>
+    </Grid>
+</Page>
